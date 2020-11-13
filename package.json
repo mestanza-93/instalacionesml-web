@@ -1,0 +1,15 @@
+{
+  "name": "instalacionesml",
+  "version": "1.0.0",
+  "description": "Instalaciones ML Web",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Mestanza",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
