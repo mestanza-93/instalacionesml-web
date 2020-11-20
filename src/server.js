@@ -16,10 +16,10 @@ router.get('/services', (req, res) => {
 
 router.get('/contact', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'contact.html'));
-});
+}); 
 
 
-
+app.use(express.static(__dirname + '/assets/'));
 app.use('/', router);
 
 app.listen(constants.PORT, () => {

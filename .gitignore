@@ -1,5 +1,11 @@
+## Google Cloud
 .gcloudignore
 
-package-lock.json
 
+## Node
+package-lock.json
 node_modules/
+
+
+## Assets - Media
+src/assets/
