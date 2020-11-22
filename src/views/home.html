@@ -1,39 +1,24 @@
 <html>
   <head>
 
-    <meta charset="utf-8" />
+    <!-- <meta charset="utf-8" />
     <meta name="title" content="InstalacionesML" />
     <meta name="description" content="Instalaciones y reparaciones Málaga" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
-    <script>
-      var $ = require("jquery");
-    </script>
+    <script src="/jquery/jquery.js"></script>
     <script>
       $(function () {
-        $("#includedContent").load("base.html");
+        $("#includedContent").load("/views/base.html");
       });
     </script>
 
-    <link rel="stylesheet" type="text/css" href="css/home.css" />
-
+    <!-- <link rel="stylesheet" type="text/css" href="css/home.css" /> -->
   </head>
   <body>
     <div id="includedContent"></div>
     <div>
       <h1>Instalaciones ML</h1>
-    </div>
-
-    <form method="POST" action="/home">
-      <div>
-        <input type="text" name="name" placeholder="Name" />
-      </div>
-      <div>
-        <textarea name="message" placeholder="Message"></textarea>
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-    </form>
+    </div>  
   </body>
 </html>
