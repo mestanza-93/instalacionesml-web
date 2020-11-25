@@ -15,6 +15,9 @@ app.use('/jquery', express.static(path.join(constants.JQUERY)));
 // ASSETS 
 app.use('/assets', express.static(constants.ASSETS_PATH));
 
+// CSS 
+app.use('/css', express.static(constants.CSS_PATH));
+
 // VIEWS
 app.use('/views', express.static(constants.VIEWS_PATH));
 
