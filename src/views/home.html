@@ -1,24 +1,75 @@
+<!DOCTYPE html>
 <html>
   <head>
-
-    <!-- <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="charset=UTF-8" />
+    <meta charset="utf-8" />
     <meta name="title" content="InstalacionesML" />
-    <meta name="description" content="Instalaciones y reparaciones Málaga" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="description" content="Instalaciones y reparaciones placas solares en Málaga" />
+    <meta name="viewport" content="width=devºice-width, initial-scale=1.0" />
+    <title>Instalaciones ML</title>
+
+    <link rel="stylesheet" href="/bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
 
     <script src="/jquery/jquery.js"></script>
     <script>
       $(function () {
-        $("#includedContent").load("/views/base.html");
+        $("#header").load("/views/header.html");
+        $("#footer").load("/views/footer.html");
       });
     </script>
-
-    <!-- <link rel="stylesheet" type="text/css" href="css/home.css" /> -->
   </head>
+
   <body>
-    <div id="includedContent"></div>
-    <div>
-      <h1>Instalaciones ML</h1>
-    </div>  
+    <div id="header"></div>
+
+    <div class="col-md-10 mx-3 my-3">
+      <div class="row">
+        
+        <div class="card col-md-3 my-3">
+          <div class="card-header bg-primary text-white">
+            Contacto
+          </div>
+          <div class="card-body">
+          <p class="card-text">Puede contactar con nosotros por teléfono.</p>
+          <p class="text-center phone">640 53 21 75</p>
+          </div>
+        </div>
+
+        <div class="card col-md-3 my-3">
+          <div class="card-header bg-primary text-white">
+            Instalaciones
+          </div>
+          <div class="card-body">
+          <p class="card-text">Instalamos placas solares ACS, termos eléctricos, depósitos solares, descalcificadores y osmosis.</p>
+          </div>
+        </div>
+
+        <div class="card col-md-3 my-3">
+          <div class="card-header bg-primary text-white">
+            Mantenimiento
+          </div>
+          <div class="card-body">
+            <p class="card-text">Realizamos reparaciones de placas solares, termos eléctricos, depósitos solares, descalcificadores y osmosis.</p>
+          </div>
+        </div>
+
+        <div class="card col-md-3 my-3">
+          <div class="card-header bg-primary text-white">
+            Presupuesto
+          </div>
+          <div class="card-body">
+            <p class="card-text">Tenemos de un servicio de presupuestos sin compromiso alguno, disponibles en cualquier momento.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div id="footer"></div>  
   </body>
 </html>

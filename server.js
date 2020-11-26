@@ -31,12 +31,28 @@ router.get('/base', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'base.html'));
 });
 
-router.get('/services', (req, res) => {
+router.get('/servicios', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'services.html'));
 });
 
-router.get('/contact', (req, res) => {
+router.get('/productos', (req, res) => {
+    res.sendFile(path.join(constants.VIEWS_PATH + 'products.html'));
+}); 
+
+router.get('/contacto', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'contact.html'));
+}); 
+
+router.get('/instalaciones-placas-solares', (req, res) => {
+    res.sendFile(path.join(constants.VIEWS_PATH + 'solar-panels.html'));
+}); 
+
+router.get('/reparaciones-placas-solares', (req, res) => {
+    res.sendFile(path.join(constants.VIEWS_PATH + 'solar-panels.html'));
+}); 
+
+router.get('/mantemimiento', (req, res) => {
+    res.sendFile(path.join(constants.VIEWS_PATH + 'maintenance.html'));
 }); 
 
 app.use('/', router);
