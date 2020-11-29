@@ -10,6 +10,7 @@ const router = express.Router();
 app.use('/bootstrap_css', express.static(path.join(constants.BOOTSTRAP_CSS)));
 app.use('/bootstrap_js', express.static(path.join(constants.BOOTSTRAP_JS)));
 app.use('/jquery', express.static(path.join(constants.JQUERY)));
+app.use('/icons', express.static(path.join(constants.ICONS_CSS)));
 
 
 // ASSETS 
@@ -20,6 +21,9 @@ app.use('/css', express.static(constants.CSS_PATH));
 
 // VIEWS
 app.use('/views', express.static(constants.VIEWS_PATH));
+
+// JS
+app.use('/js', express.static(constants.JS_PATH));
 
 
 // ROUTER
