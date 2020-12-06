@@ -3,8 +3,11 @@
     height: auto;
 }
 
-.nav-item {
+.nav-link {
     font-size: x-large;
     font-weight: bold;
+}
+
+.nav-section {
     color: #0275d8;
 }
