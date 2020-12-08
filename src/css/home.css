@@ -17,6 +17,17 @@
   font-weight: bold;
 }
 
+.fa-envelope {
+  font-size: xx-large;
+  font-weight: bold
+}
+
+.email {
+  color: #0275d8;
+  font-size: large;
+  font-weight: bold;
+}
+
 .card-header {
   font-size: x-large;
   text-align: center;

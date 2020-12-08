@@ -16,14 +16,14 @@
       type="image/ico"
       href="assets/images/favicon.ico"
     />
-    <link rel="stylesheet" href="bootstrap_css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css" />
     <link rel="stylesheet" href="icons/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/home.css" />
 
     <script src="jquery/jquery.js"></script>
-    <script src="bootstrap_js/bootstrap.min.js"></script>
+    <script src="bootstrap-js/bootstrap.min.js"></script>
     <script>
       $(function () {
         $("#header").load("/views/header.html");
@@ -38,7 +38,7 @@
 
     <div
       id="carouselExampleIndicators"
-      class="carousel slide col-md-10 mx-3 my-3"
+      class="carousel slide col-md-12 my-3"
       data-ride="carousel"
     >
       <ol class="carousel-indicators">
@@ -91,6 +91,54 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Siguiente</span>
       </a>
+    </div>
+
+    <div class="col-md-12 my-3">
+      <div class="row">
+        <div class="card col-md-3 my-3">
+          <div class="card-header bg-primary text-white">Contacto</div>
+          <div class="card-body">
+            <p class="card-text">
+              Realizamos instalaciones y reparaciones en toda la provincia de
+              Málaga.
+            </p>
+          </div>
+          <div classs="card-footer">
+            <p class="text-center">
+              <i class="fa fa-phone phone" aria-hidden="true"></i
+              ><b class="phone-number"> 640 532 175</b>
+            </p>
+            <p class="text-center">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <!-- <b class="email"> jose.manuel.mestanza@gmail.com</b> -->
+              <b class="email"> mestanza-79@hotmail.com</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="card col-md-3 my-3">
+          <div class="card-header bg-primary text-white">Instalaciones - Mantenimiento</div>
+          <div class="card-body">
+            <ul class="card-text">
+              <li>Placas solares ACS</li>
+              <li>Termos eléctricos</li>
+              <li>Depósitos solares</li>
+              <li>Descalcificadores</li>
+              <li>Osmosis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card col-md-3 my-3">
+          <div class="card-header bg-primary text-white">Presupuesto</div>
+          <div class="card-body">
+            <p class="card-text">
+              Tenemos de un servicio de presupuestos sin compromiso alguno,
+              disponibles a través de teléfono o email.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="footer"></div>

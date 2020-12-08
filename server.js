@@ -7,8 +7,8 @@ const router = express.Router();
 
 
 // NODE MODULES
-app.use('/bootstrap_css', express.static(path.join(constants.BOOTSTRAP_CSS)));
-app.use('/bootstrap_js', express.static(path.join(constants.BOOTSTRAP_JS)));
+app.use('/bootstrap-css', express.static(path.join(constants.BOOTSTRAP_CSS)));
+app.use('/bootstrap-js', express.static(path.join(constants.BOOTSTRAP_JS)));
 app.use('/jquery', express.static(path.join(constants.JQUERY)));
 app.use('/icons', express.static(path.join(constants.ICONS_CSS)));
 
@@ -31,32 +31,28 @@ router.get('/', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'home.html'));
 });
 
-router.get('/base', (req, res) => {
-    res.sendFile(path.join(constants.VIEWS_PATH + 'base.html'));
+router.get('/placas-solares', (req, res) => {
+    res.sendFile(path.join(constants.VIEWS_PATH + 'home.html'));
 });
 
-router.get('/servicios', (req, res) => {
-    res.sendFile(path.join(constants.VIEWS_PATH + 'services.html'));
+router.get('/base', (req, res) => {
+    res.sendFile(path.join(constants.VIEWS_PATH + 'base.html'));
 });
 
 router.get('/productos', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'products.html'));
 }); 
 
-router.get('/contacto', (req, res) => {
-    res.sendFile(path.join(constants.VIEWS_PATH + 'contact.html'));
-}); 
-
 router.get('/instalaciones-placas-solares', (req, res) => {
-    res.sendFile(path.join(constants.VIEWS_PATH + 'solar-panels.html'));
+    res.sendFile(path.join(constants.VIEWS_PATH + 'installations.html'));
 }); 
 
 router.get('/reparaciones-placas-solares', (req, res) => {
-    res.sendFile(path.join(constants.VIEWS_PATH + 'solar-panels.html'));
+    res.sendFile(path.join(constants.VIEWS_PATH + 'maintenance.html'));
 }); 
 
-router.get('/mantemimiento', (req, res) => {
-    res.sendFile(path.join(constants.VIEWS_PATH + 'maintenance.html'));
+router.get('/aviso-legal', (req, res) => {
+    res.sendFile(path.join(constants.VIEWS_PATH + 'legal.html'));
 }); 
 
 app.use('/', router);
