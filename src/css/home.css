@@ -9,7 +9,7 @@
 }
 
 .card-body {
-  border-color:#0275d8;
+  border-color: #0275d8;
 }
 
 .fa-phone {
@@ -19,7 +19,7 @@
 
 .fa-envelope {
   font-size: xx-large;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .email {
@@ -39,4 +39,10 @@
 
 .carousel-title {
   color: #0275d8;
+}
+
+.carousel .carousel-item img {
+  max-height: 700px;
+  /* max-width: 700px; */
+  min-width: auto;
 }
