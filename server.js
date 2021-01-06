@@ -31,7 +31,7 @@ router.get('/', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'home.html'));
 });
 
-router.get('/placas-solares', (req, res) => {
+router.get('/placas-solares-malaga', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'home.html'));
 });
 
