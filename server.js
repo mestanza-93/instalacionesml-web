@@ -39,7 +39,7 @@ router.get('/base', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'base.html'));
 });
 
-router.get('/productos', (req, res) => {
+router.get('/productos-energia-solar', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'products.html'));
 }); 
 
@@ -55,8 +55,16 @@ router.get('/aviso-legal', (req, res) => {
     res.sendFile(path.join(constants.VIEWS_PATH + 'legal.html'));
 }); 
 
-app.use('/', router);
+router.get('/robots.txt', (req, res) => {
+    res.sendFile(constants.ROBOTS_PATH);
+}); 
 
+router.get('/sitemap.xml', (req, res) => {
+    res.sendFile(constants.SITEMAP_PATH);
+}); 
+
+
+app.use('/', router);
 
 
 app.listen(constants.PORT, () => {
