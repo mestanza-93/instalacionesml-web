@@ -47,6 +47,32 @@
 
 .carousel .carousel-item img {
   max-height: 700px;
-  /* max-width: 700px; */
+  max-width: 1400px;
   min-width: auto;
+  margin: auto;
+}
+
+.list-group-item {
+  border: 0;
+}
+
+.item-left {
+  width: 20%;
+  float: left;
+}
+
+.item-right {
+  width: 80%;
+  float: left;
+}
+
+.check {
+  color: green;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.list-span {
+  font-size: large;
+  font-weight: bold;
 }
