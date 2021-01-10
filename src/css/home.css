@@ -76,3 +76,27 @@
   font-size: large;
   font-weight: bold;
 }
+
+h1.not-found {
+  font-size: 350%;
+  font-weight: bold;
+}
+
+h2.not-found {
+  font-weight: bold;
+}
+
+.error-404 {
+  color:#0275d8;
+}
+
+.fa-angle-right {
+  color:black;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.list-href {
+  font-size: x-large;
+  font-weight: bold;
+}
