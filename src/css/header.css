@@ -1,0 +1,17 @@
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.nav-link {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.dropdown-item {
+    color: #868e96;
+}
+
+.dropdown-menu {
+    border: none;
+}

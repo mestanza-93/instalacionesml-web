@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+
+
+.phone-number {
+  color: #0275d8;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  border-color: #0275d8;
+}
+
+.fa-phone {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.fa-envelope {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.email {
+  color: #0275d8;
+  font-size: large;
+  font-weight: bold;
+}
+
+.card-header {
+  font-size: x-large;
+  text-align: center;
+}
+
+.card-text {
+  font-size: large;
+}
+
+.text-blue {
+  color: #0275d8;
+}
+
+.carousel-title {
+  color: #0275d8;
+}
+
+.carousel .carousel-item img {
+  max-height: 700px;
+  max-width: 1400px;
+  min-width: auto;
+  margin: auto;
+}
+
+.list-group-item {
+  border: 0;
+}
+
+.item-left {
+  width: 20%;
+  float: left;
+}
+
+.item-right {
+  width: 80%;
+  float: left;
+}
+
+.check {
+  color: green;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.list-span {
+  font-size: large;
+  font-weight: bold;
+}
+
+h1.not-found {
+  font-size: 350%;
+  font-weight: bold;
+}
+
+h2.not-found {
+  font-weight: bold;
+}
+
+.error-404 {
+  color: #0275d8;
+}
+
+.fa-angle-right {
+  color: black;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.list-href {
+  font-size: x-large;
+  font-weight: bold;
+}
