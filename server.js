@@ -11,6 +11,9 @@ app.use("/bootstrap-js", express.static(path.join(constants.BOOTSTRAP_JS)));
 app.use("/jquery", express.static(path.join(constants.JQUERY)));
 app.use("/icons", express.static(path.join(constants.ICONS_CSS)));
 
+// CONFIG
+app.use("/config", express.static(constants.CONFIG_PATH));
+
 // ASSETS
 app.use("/assets", express.static(constants.ASSETS_PATH));
 
