@@ -4,7 +4,7 @@
   <url>
     <loc>https://instalacionesml.com/placas-solares-malaga</loc>
     <lastmod>2021-01-27T21:23:17+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://instalacionesml.com/assets/images/placa-left.jpeg</image:loc>
@@ -19,7 +19,7 @@
   <url>
     <loc>https://instalacionesml.com/instalaciones-placas-solares</loc>
     <lastmod>2021-01-27T21:23:17+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://instalacionesml.com/assets/images/placa-left.jpeg</image:loc>
@@ -34,7 +34,7 @@
   <url>
     <loc>https://instalacionesml.com/reparaciones-placas-solares</loc>
     <lastmod>2021-01-27T21:23:17+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://instalacionesml.com/assets/images/placa-left.jpeg</image:loc>
@@ -49,7 +49,7 @@
   <url>
     <loc>https://instalacionesml.com/productos-energia-solar</loc>
     <lastmod>2021-01-27T21:23:17+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://instalacionesml.com/assets/images/placa-product.jpeg</image:loc>
@@ -71,6 +71,6 @@
     <loc>https://instalacionesml.com/aviso-legal</loc>
     <lastmod>2021-01-27T21:23:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.3</priority>
   </url>
 </urlset>
