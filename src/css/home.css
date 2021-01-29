@@ -61,8 +61,8 @@ footer {
 }
 
 .carousel .carousel-item img {
-  max-height: 700px;
-  max-width: 1400px;
+  max-height: 500px;
+  max-width: 1000px;
   min-width: auto;
   margin: auto;
 }

@@ -2,8 +2,19 @@
   font-size: xx-large;
 }
 
+.list-unstyled li {
+  display: inline;
+  padding: 20px;
+}
+
 .footer-link {
   font-size: x-large;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-link-small {
+  font-size: medium;
   text-decoration: none;
   color: white;
 }
