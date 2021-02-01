@@ -8,6 +8,12 @@
     font-weight: bold;
 }
 
+.contact-link {
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .dropdown-item {
     color: #868e96;
 }

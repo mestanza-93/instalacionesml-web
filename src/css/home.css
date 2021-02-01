@@ -105,6 +105,12 @@ h2.not-found {
   color: #0275d8;
 }
 
+.fa-tools {
+  color: black;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
 .fa-angle-right {
   color: black;
   font-size: xx-large;
@@ -114,4 +120,14 @@ h2.not-found {
 .list-href {
   font-size: x-large;
   font-weight: bold;
+}
+
+.mobile-show {
+  display: none;
+}
+
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){
+    .mobile-show { display: inline;}
 }
