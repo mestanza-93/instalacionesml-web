@@ -63,12 +63,29 @@ router.get("/sitemap.xml", (req, res) => {
   res.sendFile(constants.SITEMAP_PATH);
 });
 
+
+/**
+ * Redirect http to https
+ */
+app.use(function (req, res, next) {
+  if (!req.secure && process.env.NODE_ENV.trim() !== 'dev') {
+    res.redirect('https://' + req.headers.host + req.url);
+  } else {
+    next();
+  }
+});
+
+
 app.use("/", router);
 
 app.use(express.static("routes"));
 
+
+/**
+ * Show 404
+ */
 app.use(function (req, res, next) {
-  res.sendFile(path.join(constants.VIEWS_PATH + "404.html"));
+    res.sendFile(path.join(constants.VIEWS_PATH + "404.html"));
 });
 
 app.listen(constants.PORT, () => {
