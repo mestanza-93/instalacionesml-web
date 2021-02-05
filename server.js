@@ -35,10 +35,6 @@ router.get("/placas-solares-malaga", (req, res) => {
   res.sendFile(path.join(constants.VIEWS_PATH + "home.html"));
 });
 
-router.get("/base", (req, res) => {
-  res.sendFile(path.join(constants.VIEWS_PATH + "base.html"));
-});
-
 router.get("/productos-energia-solar", (req, res) => {
   res.sendFile(path.join(constants.VIEWS_PATH + "products.html"));
 });
@@ -61,6 +57,10 @@ router.get("/robots.txt", (req, res) => {
 
 router.get("/sitemap.xml", (req, res) => {
   res.sendFile(constants.SITEMAP_PATH);
+});
+
+router.get("/favicon.ico", (req, res) => {
+  res.sendFile(constants.FAVICON_PATH);
 });
 
 
