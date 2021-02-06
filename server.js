@@ -5,6 +5,8 @@ const constants = require("./constants");
 
 const router = express.Router();
 
+app.enable('trust proxy');
+
 // NODE MODULES
 app.use("/bootstrap-css", express.static(path.join(constants.BOOTSTRAP_CSS)));
 app.use("/bootstrap-js", express.static(path.join(constants.BOOTSTRAP_JS)));
@@ -55,6 +57,14 @@ router.get("/robots.txt", (req, res) => {
   res.sendFile(constants.ROBOTS_PATH);
 });
 
+router.get("/site.webmanifest", (req, res) => {
+  res.sendFile(constants.MANIFEST_PATH);
+});
+
+router.get("/browserconfig.xml", (req, res) => {
+  res.sendFile(constants.BROWSERCONFIG_PATH);
+});
+
 router.get("/sitemap.xml", (req, res) => {
   res.sendFile(constants.SITEMAP_PATH);
 });
@@ -68,7 +78,9 @@ router.get("/favicon.ico", (req, res) => {
  * Redirect http to https
  */
 app.use(function (req, res, next) {
-  if (!req.secure && process.env.NODE_ENV.trim() !== 'dev') {
+  if (req.secure) {
+    next(); 
+  } else if (process.env.NODE_ENV.trim() !== 'dev' && !req.secure) {
     res.redirect('https://' + req.headers.host + req.url);
   } else {
     next();
