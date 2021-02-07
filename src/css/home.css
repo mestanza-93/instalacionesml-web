@@ -1,17 +1,19 @@
 html, body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
 }
+
 .content {
   flex: 1 0 auto;
 }
+
 footer {
   flex-shrink: 0;
 }
-
 
 .phone-number {
   color: #0275d8;
@@ -21,6 +23,15 @@ footer {
 
 .card {
   border: none;
+  border-color: #0275d8;
+}
+
+.card-header {
+  background-color: white;
+  color: #0275d8;
+  font-weight: bold;
+  border-bottom-color: #f7bc0c;
+  border-bottom-width: 3px;
 }
 
 .card-body {
@@ -35,6 +46,12 @@ footer {
 .fa-envelope {
   font-size: xx-large;
   font-weight: bold;
+}
+
+.fa-id-card {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #f7bc0c;
 }
 
 .email {
